@@ -2,6 +2,20 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Jest Tests",
+      "runtimeExecutable": "jest",
+      "cwd": "${workspaceFolder}",
+      "args": [
+        "--inspect-brk",
+        "/node_modules/.bin/jest",
+        "--runInBand",
+        "--config",
+        "jest.config.js"
+      ]
+    },
+    {
       "name": "Debug Action",
       "type": "node",
       "request": "launch",
